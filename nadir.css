@@ -83,7 +83,7 @@ html{
 #about-me{
     background-color: gray;
     margin:0;
-    min-height:100vh;
+    min-height:90vh;
     text-align: center;
     padding: 20px;
     font-weight: bold;
@@ -205,24 +205,63 @@ html{
     
 }
 #Projects{
+    background-color: darkred;
     min-height: 90vh;
+    padding: 2px;
 }
 
 #project-title{
+    color: white;
     text-align: center;
+    transform: translateY(35px);
 }
 #expense{
 align-items: center;
-width: 20%;
-transform: translate(300%,100%);
+width: 30%;
+transform: translate(255%,110%);
 height: auto;
 
 
 }
 #expense-title{
-    transform: translate(23%,80%);
+    color: white;
+    transform: translate(23%,5%);
 }
 #expense-P{
+    color: white;
     width: 30%;
-    transform: translate(50%,30%);
+    transform: translate(50%,10%);
+}
+#LLC-title{
+    color: white;
+    text-align: center;
+    transform: translate(25%)
+    translateY(45px)
+    
+}
+#about-LLC{
+    color: white;
+    width: 30%;
+    transform: translate(200%,50%);
+
+}
+
+#socials{
+    text-align: center;
+    color: white;
+    transform: translateY(150px);
+}
+#github{
+    color: white;
+}
+#linkedin{
+    color: white;
+}
+#github:hover{
+    color: black;
+
+}
+#linkedin:hover{
+    color: black;
+
 }
