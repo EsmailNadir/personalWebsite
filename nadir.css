@@ -103,7 +103,7 @@ html{
 }
 
 #about-line{
-    border-top: solid black 2px;
+    border-top: solid #5468FF 2px;
     align-items: center;
     transform: translate(-110%,100%);
     width: 100px;
@@ -206,62 +206,114 @@ html{
 }
 #Projects{
     background-color: darkred;
+    overflow: hidden;
     min-height: 90vh;
-    padding: 2px;
+   margin: auto;
 }
 
 #project-title{
     color: white;
     text-align: center;
     transform: translateY(35px);
+    margin: auto;
 }
 #expense{
-align-items: center;
-width: 30%;
-transform: translate(255%,110%);
-height: auto;
-
-
+    height: auto;
+    width: 30%;
+    transform: translate(200%,80%);
+  
 }
 #expense-title{
     color: white;
-    transform: translate(23%,5%);
+    transform: translate(23%,-220%);
 }
 #expense-P{
     color: white;
     width: 30%;
-    transform: translate(50%,10%);
+    transform: translate(50%,-40%);
 }
 #LLC-title{
     color: white;
     text-align: center;
     transform: translate(25%)
-    translateY(45px)
+    translateY(5px)
     
 }
 #about-LLC{
     color: white;
     width: 30%;
-    transform: translate(200%,50%);
+    transform: translate(200%,11%);
 
 }
 
-#socials{
+#contact{
+    min-height: 50vh;
+    overflow: hidden;
+    margin: 0%;
+    background-color: black;
+    color: white;
+}
+
+.contact-text{
     text-align: center;
-    color: white;
-    transform: translateY(150px);
+    margin-top: 70px;
 }
-#github{
-    color: white;
-}
-#linkedin{
-    color: white;
-}
-#github:hover{
-    color: black;
 
+#border-line-contact{
+    border: 2px solid white;
+    margin-top: 170px;
 }
-#linkedin:hover{
-    color: black;
 
+
+.icons {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	column-gap: 25px;
 }
+.icon {
+	display: inline-flex;
+	width: 60px;
+	height: 60px;
+	text-decoration: none;
+	font-size: 26px;
+	color: #fff;
+	border-radius: 50%;
+	outline: 2px solid #fff;
+	transition-property: outline-offset, outline-color, background-color;
+	transition-duration: 0.25s;
+}
+
+.icon:hover {
+	outline-offset: 4px;
+}
+.icon i {
+	margin: auto;
+}
+.icon:hover i {
+	animation: shake 0.25s;
+}
+
+.icon--linkedin:hover {
+	background-color: #0077b5;
+	outline-color: #0077b5;
+}
+.icon--github:hover {
+	background-color: red;
+	outline-color: red;
+}
+@keyframes shake {
+	10% {
+		transform: rotate(15deg);
+	}
+	20% {
+		transform: rotate(-15deg);
+	}
+	30% {
+		transform: rotate(15deg);
+	}
+	40% {
+		transform: rotate(-15deg);
+	}
+}
+
