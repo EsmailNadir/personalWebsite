@@ -208,43 +208,99 @@ html{
     background-color: darkred;
     overflow: hidden;
     min-height: 90vh;
-   margin: auto;
+    margin: auto;
 }
 
 #project-title{
     color: white;
     text-align: center;
+    text-transform: uppercase;
     transform: translateY(35px);
     margin: auto;
 }
 #expense{
     height: auto;
     width: 30%;
-    transform: translate(200%,80%);
+    border-radius: 10px;
+    transform: translate(200%,50%);
   
 }
 #expense-title{
     color: white;
-    transform: translate(23%,-220%);
+    transform: translate(23%,-450%);
 }
 #expense-P{
     color: white;
     width: 30%;
-    transform: translate(50%,-40%);
+    transform: translate(50%,-100%);
 }
 #LLC-title{
     color: white;
     text-align: center;
     transform: translate(25%)
-    translateY(5px)
+    translateY(-25px)
     
 }
 #about-LLC{
     color: white;
     width: 30%;
-    transform: translate(200%,11%);
+    transform: translate(200%,-10%);
 
 }
+.LLC-slider-container {
+    position:absolute;
+    margin: auto;
+    top: 242%;
+    right: 53%;;
+    padding: 2rem;
+    width: 31%;
+    height: 50px;
+}
+
+.LLC-slider-wrapper{
+    position: relative;
+    max-width: 48rem;
+    margin:0 auto;
+}
+.LLC-slider{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0%,0%,0.25);
+    border-radius: 0.5rem;
+
+}
+.LLC-slider img{
+    width: 30%;
+    height: auto;
+    flex: 1 0 100%;
+    scroll-snap-align:start;
+    object-fit:cover;
+}
+.LLC-slider-nav{
+    display: flex;
+    column-gap:1rem;
+    position:absolute;
+    bottom: 1.25rem;
+    left:50%;
+    transform: translate(-50%);
+    z-index: 1;
+}
+.LLC-slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.LLC-slider-nav a:hover{
+    opacity: 1;
+}
+
 
 #contact{
     min-height: 50vh;
@@ -254,9 +310,15 @@ html{
     color: white;
 }
 
-.contact-text{
+#contact-title{
+    text-transform: uppercase;
+    font-size: 35px;
     text-align: center;
     margin-top: 70px;
+}
+#email{
+    font: 20px;
+    text-align: center;
 }
 
 #border-line-contact{
