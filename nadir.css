@@ -180,7 +180,11 @@ html{
 }
 #button-about{
 
-    display: inline-block;
+    display:inline-flex;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    align-items: center;
     outline: 0;
     border: 0;
     cursor: pointer;
@@ -211,7 +215,7 @@ html{
     margin: auto;
 }
 
-#project-title{
+#Projects-title{
     color: white;
     text-align: center;
     text-transform: uppercase;
@@ -238,13 +242,13 @@ html{
     color: white;
     text-align: center;
     transform: translate(25%)
-    translateY(-25px)
+    translateY(-75px)
     
 }
 #about-LLC{
     color: white;
     width: 30%;
-    transform: translate(200%,-10%);
+    transform: translate(200%,-60%);
 
 }
 .LLC-slider-container {
@@ -378,4 +382,102 @@ html{
 		transform: rotate(-15deg);
 	}
 }
+
+@media screen and (max-width: 991px) {
+    
+    /* navbar */
+    .navbar{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        
+    }
+    .navbar-nav{
+        font-size:smaller;
+        display: flex;
+    }
+    .main-display{
+        text-align: center;
+        transform: translate(-50%,-60%);
+    }
+    /* coverpage */
+    #coverPage{
+        background: url(https://wallpapers.com/images/hd/dark-shades-of-purple-j1bf61qb3t5kkk6h.webp)center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #cover-title{
+        font-size: 2em;
+         }
+    .SE{
+        font-size:1em;
+    }
+    .bball{
+        font-size: .75em;
+    }
+    .gym{
+        font-size: .5em;
+    }
+    .about-title{
+        text-align: center;
+        transform: translate(-42%,-50%);
+        
+    }
+    #about-p{
+        transform: translate(70%,225%);
+        text-align: center;
+        align-items: center;
+        font-size: .5em;
+        
+    }
+    .slider-wrapper{
+    transform: translate(-30%,-10%);
+    width: 300px;
+
+    }
+    #button-about{
+        transform: translate(180%,500%);
+    }
+
+#Projects-title{
+   top: -10%;
+
+}
+#expense{
+    width: 250px;
+    transform: translate(80%,40%);
+    height:225px;
+
+}
+#expense-title{
+    transform: translate(5%,-870%);
+    font-size: medium;
+
+}
+#expense-P{
+font-size:12px;
+transform: translate(20%,-77%);
+}
+#LLC-title{
+    transform: translate(20%,-200%);
+}
+#about-LLC{
+width: 40%;
+font-size: smaller;
+transform:translate(130%,-55%);
+
+}
+.LLC-slider-container{
+width: 200px;
+top: 275%;
+right: 47%;
+}
+.LLC-slider{
+    height: fit-content;
+    width: fit-content;
+}
+
+}
+
+
 
