@@ -64,13 +64,13 @@ html{
   text-shadow: 3px 3px 20px black,
     -2px 1px 30px black;
 }
-#title{
-    font-size:3em;
+#cover-title{
+    font-size: 35px;
     font-weight: 800;
 }
 .SE{
-    font-size: 25px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 500;
 }
 .bball{
     font-size: 18px;
